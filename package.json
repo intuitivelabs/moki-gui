@@ -1,0 +1,15 @@
+{
+    "name": "@moki-client/gui",
+    "version": "1.0.0",
+    "description": "Client GUI for Moki",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Frafos, Intuitive Labs",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "react-dom": "^16.7.0",
+        "react-router-dom": "^4.3.1"
+    }
+}
