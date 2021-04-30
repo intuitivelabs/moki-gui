@@ -1,12 +1,11 @@
 /*
-render menu list with decryption button
+render menu list 
 input: array of dashboards to render
 */
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { jsx as _jsx } from "react/jsx-runtime";
 import { jsxs as _jsxs } from "react/jsx-runtime";
-const DecryptPasswordPopup = /*#__PURE__*/lazy(() => import("./decryptPasswordPopup.js"));
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -16,7 +15,7 @@ export const renderNavBar = dashboards => {
   var navBar = [];
 
   for (var i = 0; i < dashboards.length; i++) {
-    if (dashboards[i] !== "decrypt" && dashboards[i] !== "web") {
+    if (dashboards[i] !== "web") {
       navBar.push( /*#__PURE__*/_jsx(Link, {
         to: "/" + dashboards[i],
         id: "/" + dashboards[i],
@@ -33,16 +32,8 @@ export const renderNavBar = dashboards => {
           })]
         })
       }, dashboards[i]));
-    } else if (dashboards[i] === "decrypt") {
-      navBar.push( /*#__PURE__*/_jsx(Suspense, {
-        fallback: /*#__PURE__*/_jsx("span", {}),
-        children: /*#__PURE__*/_jsx(DecryptPasswordPopup, {})
-      }, "decrypt"));
-      return navBar;
     }
   }
 
   return navBar;
 };
-
-//# sourceMappingURL=menu.js.map
