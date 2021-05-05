@@ -1,12 +1,13 @@
 import { getTypes } from "../../../../../src/js/helpers/getTypes.js";
 import { getFilters } from "../filter/getFilters.js";
 import store from "../../../../../src/js/store/index";
+
+
 /**
 *ES request API
 * @param {query}  string request path
 * @return {json} data from ES
 * */
-
 export async function elasticsearchConnection(query) {
   var pathname = window.location.pathname;
   pathname = pathname.substr(1);
@@ -16,6 +17,7 @@ export async function elasticsearchConnection(query) {
   }
 
   if (query.includes(pathname)) {
+    //get all necessarily parameters (filters, types, timerange) 
     var filters = getFilters();
     var types = getTypes();
     console.info("MOKI: send fetch: " + query);
@@ -59,14 +61,12 @@ export async function elasticsearchConnection(query) {
     }
 
     data = await response.json();
-    console.info(new Date() + " MOKI: got elastic data"); //my own error 
+    console.info(new Date() + " MOKI: got elastic data");
 
     if (data.msg) {
-      //  store.dispatch(setError(data.msg.message));
       return "ERROR: " + data.msg;
     }
 
     return data;
-  } //return "";
-
+  }
 }

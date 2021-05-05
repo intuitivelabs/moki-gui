@@ -5,10 +5,20 @@ input: array of dashboards to render
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+*Capitalize first letter
+* @param {string}  dashboard name
+* @return {string} dashboard name with capital first letter
+* */
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+/**
+*render all Link (react-router) to dashboards
+* @param {array}  dashboard list
+* @return {array} dashboard Links
+* */
 export const renderNavBar = (dashboards) => {
   var navBar = [];
   for (var i = 0; i < dashboards.length; i++) {
