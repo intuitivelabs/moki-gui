@@ -46,7 +46,7 @@ export async function elasticsearchConnection(query) {
         }
       });
     } catch (error) {
-      return "ERROR: " + error;
+      return error;
     }
 
     if (!response.ok) {
@@ -54,9 +54,9 @@ export async function elasticsearchConnection(query) {
       var error = await response.json();
 
       if (error.error) {
-        return "ERROR: Problem to connect to ES: " + error.error;
+        return "Problem to connect to elasticsearch. " + error.error;
       } else {
-        return "ERROR: Problem with ES: " + JSON.stringify(error);
+        return "Problem with elasticsearch. " + JSON.stringify(error);
       }
     }
 
@@ -64,7 +64,7 @@ export async function elasticsearchConnection(query) {
     console.info(new Date() + " MOKI: got elastic data");
 
     if (data.msg) {
-      return "ERROR: " + data.msg;
+      return data.msg;
     }
 
     return data;
