@@ -3,4 +3,10 @@ export { getFilters } from './src/filter/getFilters';
 export { renderNavBar } from './src/menu/menu.js';
 export { elasticsearchConnection } from './src/helpers/elasticsearchConnection.js';
 export { getProfile } from './src/helpers/getProfile.js';
-export { getGeoData, decryptGeoData } from './src/helpers/geomapData.js'
+export { getGeoData, decryptGeoData } from './src/helpers/geomapData.js';
+export { Colors } from './src/style/Colors.js';
+export { ColorsGreen } from './src/style/ColorsGreen.js';
+export { ColorsNoGreen } from './src/style/ColorsNoGreen.js';
+export { ColorsRedGreen } from './src/style/ColorsRedGreen.js';
+export { ColorsReds } from './src/style/ColorsReds.js';
+export { ColorType } from './src/style/ColorType.js';
