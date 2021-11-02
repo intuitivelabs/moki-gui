@@ -32,3 +32,14 @@
 #searchBar {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+#user {
+    align-self: center;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+#footerlogo {
+    float: right;
+    height: 20px;
+}
