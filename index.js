@@ -10,3 +10,4 @@ export { ColorsNoGreen } from './src/style/ColorsNoGreen.js';
 export { ColorsRedGreen } from './src/style/ColorsRedGreen.js';
 export { ColorsReds } from './src/style/ColorsReds.js';
 export { ColorType } from './src/style/ColorType.js';
+export { Types } from './src/style/Types.js';
