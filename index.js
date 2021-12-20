@@ -11,3 +11,4 @@ export { ColorsRedGreen } from './src/style/ColorsRedGreen.js';
 export { ColorsReds } from './src/style/ColorsReds.js';
 export { ColorType } from './src/style/ColorType.js';
 export { Types } from './src/style/Types.js';
+export { shareFilters } from './src/filter/shareFilters';
