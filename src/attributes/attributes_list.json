@@ -1,0 +1,145 @@
+        {
+            "transport": {
+                "attrs.source": [
+                    "searchable"
+                ],
+                "attrs.src-port": [
+                    "searchable"
+                ],
+                "client.ip": [
+                    "searchable"
+                ],
+                "client.port": [
+                    "searchable"
+                ],
+                "attrs.transport": [
+                    "searchable"
+                ],
+                "attrs.local-if": [],
+                "attrs.reg_nh_ip": [],
+                "attrs.sourceSubnets": [
+                    "searchable"
+                ]
+            },
+            "topology": {
+                "attrs.src_rlm_name": [
+                    "searchable"
+                ],
+                "attrs.dst_rlm_name": [
+                    "searchable"
+                ],
+                "attrs.dst_ca_id": [
+                    "searchable"
+                ],
+                "attrs.src_ca_id": [
+                    "searchable"
+                ],
+                "attrs.sbc": [
+                    "searchable"
+                ]
+            },
+            "SIP": {
+                "attrs.method": [
+                    "searchable"
+                ],
+                "attrs.from": [
+                    "searchable"
+                ],
+                "attrs.to": [
+                    "searchable"
+                ],
+                "attrs.to-ua": [
+                    "searchable"
+                ],
+                "attrs.r-uri": [
+                    "searchable"
+                ],
+                "attrs.r-uri-shorted": [
+                    "searchable"
+                ],
+                "attrs.aor": [],
+                "attrs.call-id": [
+                    "searchable"
+                ],
+                "attrs.from-ua": [
+                    "searchable"
+                ],
+                "attrs.sip-reason": [
+                    "searchable"
+                ],
+                "sip.pai1": [
+                    "searchable"
+                ],
+                "sip.pai2": [
+                    "searchable"
+                ],
+                "attrs.sip-code": [
+                    "searchable"
+                ]
+            },
+            "others": {
+                "attrs.release": [
+                    "searchable"
+                ],
+                "attrs.type": [
+                    "searchable"
+                ],
+                "attrs.hostname": [
+                    "searchable"
+                ],
+                "attrs.dst_cc": [
+                    "searchable"
+                ],
+                "attrs.originator": [
+                    "searchable"
+                ],
+                "attrs.rtp-MOScqex-avg": [
+                    "searchable"
+                ],
+                "attrs.rtp-MOScqex-min": [
+                    "searchable"
+                ],
+                "from-domain": [
+                    "searchable"
+                ],
+                "attrs.conf_id": [
+                    "searchable"
+                ],
+                "geoip.country_name": [
+                    "searchable"
+                ],
+                "geoip.city_name": [
+                    "searchable"
+                ],
+                "geoip.country_code2": [
+                    "searchable"
+                ],
+                "attrs.filename": [],
+                "attrs.description": [],
+                "attrs.rtp-MOScqex-avg-a": [],
+                "attrs.rtp-MOScqex-avg-b": [],
+                "attrs.receiced_ip": [],
+                "attrs.terminator": [],
+                "attrs.rtp-lossavg": [],
+                "attrs.rtp-lossmax": [],
+                "attrs.rtp-direction": [],
+                "attrs.room": [],
+                "attrs.reg_expire": [],
+                "attrs.ua_expire": [],
+                "attrs.bitsfrom": [],
+                "attrs.bitsto": [],
+                "attrs.callfrom": [],
+                "attrs.callstartfrom": [],
+                "attrs.callstartto": [],
+                "attrs.callsto": [],
+                "attrs.tags": [],
+                "plugin": [],
+                "plugin_instance": [],
+                "rx": [],
+                "tx": [],
+                "attrs.contact": [],
+                "sources": [],
+                "URIs": [],
+                "firstCountry": []
+            }
+        }
