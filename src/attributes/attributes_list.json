@@ -12,9 +12,6 @@
                 "client.port": [
                     "searchable"
                 ],
-                "attrs.hostname": [
-                    "searchable"
-                ],
                 "attrs.transport": [
                     "searchable"
                 ],
@@ -39,6 +36,9 @@
                     "searchable"
                 ],
                 "attrs.sbc": [
+                    "searchable"
+                ],
+                "attrs.hostname": [
                     "searchable"
                 ]
             },
