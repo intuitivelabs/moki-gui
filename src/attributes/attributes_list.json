@@ -12,9 +12,13 @@
                 "client.port": [
                     "searchable"
                 ],
+                "attrs.hostname": [
+                    "searchable"
+                ],
                 "attrs.transport": [
                     "searchable"
                 ],
+                "attrs.receiced_ip": [],
                 "attrs.local-if": [],
                 "attrs.reg_nh_ip": [],
                 "attrs.sourceSubnets": [
@@ -75,34 +79,11 @@
                 ],
                 "attrs.sip-code": [
                     "searchable"
-                ]
+                ],
+                "attrs.contact": []
             },
-            "others": {
-                "attrs.release": [
-                    "searchable"
-                ],
-                "attrs.type": [
-                    "searchable"
-                ],
-                "attrs.hostname": [
-                    "searchable"
-                ],
+            "GeoIP": {
                 "attrs.dst_cc": [
-                    "searchable"
-                ],
-                "attrs.originator": [
-                    "searchable"
-                ],
-                "attrs.rtp-MOScqex-avg": [
-                    "searchable"
-                ],
-                "attrs.rtp-MOScqex-min": [
-                    "searchable"
-                ],
-                "from-domain": [
-                    "searchable"
-                ],
-                "attrs.conf_id": [
                     "searchable"
                 ],
                 "geoip.country_name": [
@@ -114,15 +95,40 @@
                 "geoip.country_code2": [
                     "searchable"
                 ],
-                "attrs.filename": [],
-                "attrs.description": [],
+                "firstCountry": []
+            },
+            "RTP": {
+                "attrs.rtp-MOScqex-avg": [
+                    "searchable"
+                ],
+                "attrs.rtp-MOScqex-min": [
+                    "searchable"
+                ],
                 "attrs.rtp-MOScqex-avg-a": [],
                 "attrs.rtp-MOScqex-avg-b": [],
-                "attrs.receiced_ip": [],
-                "attrs.terminator": [],
                 "attrs.rtp-lossavg": [],
                 "attrs.rtp-lossmax": [],
-                "attrs.rtp-direction": [],
+                "attrs.rtp-direction": []
+            },
+            "others": {
+                "attrs.release": [
+                    "searchable"
+                ],
+                "attrs.type": [
+                    "searchable"
+                ],
+                "attrs.originator": [
+                    "searchable"
+                ],
+                "from-domain": [
+                    "searchable"
+                ],
+                "attrs.conf_id": [
+                    "searchable"
+                ],
+                "attrs.filename": [],
+                "attrs.description": [],
+                "attrs.terminator": [],
                 "attrs.room": [],
                 "attrs.reg_expire": [],
                 "attrs.ua_expire": [],
@@ -137,9 +143,7 @@
                 "plugin_instance": [],
                 "rx": [],
                 "tx": [],
-                "attrs.contact": [],
                 "sources": [],
-                "URIs": [],
-                "firstCountry": []
+                "URIs": []
             }
         }
