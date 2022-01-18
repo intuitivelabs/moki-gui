@@ -3,6 +3,8 @@ export { getFilters } from './src/filter/getFilters';
 export { renderNavBar } from './src/menu/menu.js';
 export { elasticsearchConnection } from './src/helpers/elasticsearchConnection.js';
 export { getProfile } from './src/helpers/getProfile.js';
+export { storeChecksumInES } from './src/menu/ipcipher.js';
+export { storeKey } from './src/menu/ipcipher.js';
 export { getGeoData, decryptGeoData } from './src/helpers/geomapData.js';
 export { Colors } from './src/style/Colors.js';
 export { ColorsGreen } from './src/style/ColorsGreen.js';
@@ -11,6 +13,7 @@ export { ColorsRedGreen } from './src/style/ColorsRedGreen.js';
 export { ColorsReds } from './src/style/ColorsReds.js';
 export { ColorType } from './src/style/ColorType.js';
 export { Types } from './src/style/Types.js';
+import './src/style/style.css';
+export {getExceededTypes, getExceededColor, getExceededName} from './src/helpers/getExceededTypes.js';
 export { shareFilters } from './src/filter/shareFilters';
 export { getSearchableAttributes, getDisplayedAttributes, getAttributes, getCategory } from './src/attributes/attributes.js';
-
