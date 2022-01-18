@@ -3,20 +3,22 @@ import storePersistent from "../../../../../src/js/store/indexPersistent";
 
 
 export function getExceededTypes() {
-  return storePersistent.types["exceeded"];;
+  return storePersistent.getState().layout.types.exceeded;
 }
 
 /*
 return color based on exceeded name
 */
 export function getExceededColor(name) {
-  return ColorType[name];
+  if( ColorType[name]) return ColorType[name];
+  return name;
 }
 
 /*
 return human-readable name based on id
 */
 export function getExceededName(id) {
-  return Types[id];
+  if (Types[id]) return Types[id];
+  return id;
 }
 
