@@ -14,3 +14,4 @@ export { ColorsReds } from './src/style/ColorsReds.js';
 export { ColorType } from './src/style/ColorType.js';
 export { Types } from './src/style/Types.js';
 import './src/style/style.css';
++export {getExceededTypes, getExceededColor, getExceededName} from './src/helpers/getExceededTypes.js';
