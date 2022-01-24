@@ -1,4 +1,5 @@
-import { ColorType, Types } from '../style/ColorType';
+import { ColorType } from '../style/ColorType';
+import { Types } from '../style/Types';
 import storePersistent from "../../../../../src/js/store/indexPersistent";
 
 
