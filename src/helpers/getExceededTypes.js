@@ -4,14 +4,28 @@ import storePersistent from "../../../../../src/js/store/indexPersistent";
 
 
 export function getExceededTypes() {
-  return storePersistent.getState().layout.types.exceeded;
+  let array = storePersistent.getState().layout.types.exceeded;
+  if (array) {
+    var types = []
+    for (let hit of array) {
+      types.push({
+        id: hit,
+        name: getExceededName(hit),
+        state: "enable",
+        key: hit
+      });
+    }
+
+    return types;
+  }
+  return [];
 }
 
 /*
 return color based on exceeded name
 */
 export function getExceededColor(name) {
-  if( ColorType[name]) return ColorType[name];
+  if (ColorType[name]) return ColorType[name];
   return name;
 }
 
