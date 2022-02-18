@@ -16,7 +16,7 @@ export async function elasticsearchConnection(query) {
     pathname = pathname.substring(0, pathname.length - 1);
   }
 
-  if (query.includes(pathname)) {
+  if (query.includes(pathname)  || query.includes("table") ) {
     //get all necessarily parameters (filters, types, timerange) 
     var filters = getFilters();
     var types = getTypes();
