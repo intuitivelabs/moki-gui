@@ -1,7 +1,6 @@
 .chart {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    background-clip: padding-box;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 .btn-small {
