@@ -4,7 +4,8 @@
 }
 
 .btn-small {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 .sidebar-separator-title {
@@ -13,23 +14,28 @@
 }
 
 .bg-dark {
-    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 .shadow {
-    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 .filterBody {
-    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 .Advance {
-    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 #searchBar {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid #006100;
+    border-radius: 5px;
 }
 
 #user {
