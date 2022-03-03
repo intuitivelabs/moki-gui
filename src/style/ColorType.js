@@ -2,7 +2,7 @@ export const ColorType = {
   'call-end': '#58a959',
   'call-start': '#61BEE2',
   'call-attempt': '#f58231',
-  'alert': '#F58241',
+  'alert': '#00008B',
   'error': '#c41d03',
   'recording': '#2077e8',
   'message-log': '#41FA51',
