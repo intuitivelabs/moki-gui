@@ -9,10 +9,25 @@ export const getFilters = () => {
   var filters = JSON.parse(JSON.stringify(filt));
   var filtersResult = [];
 
+  for (const filter of filters) {
+    //exceeded exception, disable filter with exceeded-by or exceeded for any other dashboard than Exceeded
+    //enable automatically exceeded filters in exceeded dashboard
+    if (window.location.pathname === "/exceeded") {
+      if (filter.title.includes("exceeded") && filter.state === "enable" && filter.previousState === "enable") {
+        filter.state = "enable";
+      }
+    }
+    else {
+      if (filter.title.includes("exceeded")) {
+        filter.state = "disable";
+      }
+    }
+  }
+
   //remove filters with disable state
-  for (var i = 0; i < filters.length; i++) {
-    if (filters[i].state !== 'disable') {
-      filtersResult.push(filters[i]);
+  for (const filter of filters) {
+    if (filter.state !== 'disable') {
+      filtersResult.push(filter);
     }
   }
 

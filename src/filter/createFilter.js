@@ -23,7 +23,8 @@ export async function createFilter(searchValue, filter_id = null, dispatch = tru
       id: id,
       title: searchValue,
       state: 'enable',
-      pinned: 'true'
+      pinned: 'true',
+      previousState: "enable"
     });
     store.dispatch(setFilters(joined));
     return joined;
@@ -32,7 +33,8 @@ export async function createFilter(searchValue, filter_id = null, dispatch = tru
       id: id,
       title: searchValue,
       state: 'enable',
-      pinned: 'true'
+      pinned: 'true',
+      previousState: "enable"
     };
     return joined;
   }
