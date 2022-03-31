@@ -8,12 +8,18 @@ import store from "../../../../../src/js/store/index";
 * @param {query}  string request path
 * @return {json} data from ES
 * */
-export async function elasticsearchConnection(query) {
+export async function elasticsearchConnection(query,  params = false) {
   var pathname = window.location.pathname;
   pathname = pathname.substr(1);
 
   if (pathname.substring(pathname.length - 1) === "/") {
     pathname = pathname.substring(0, pathname.length - 1);
+  }
+
+  var fce = "";
+  if(params.fce){
+    fce = params.fce;
+    delete params.fce;
   }
 
   if (query.includes(pathname)  || query.includes("table") ) {
@@ -42,7 +48,8 @@ export async function elasticsearchConnection(query) {
         }),
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Credentials": "include"
+          "Access-Control-Allow-Credentials": "include",
+          "Access-Control-Expose-Headers": "Content-Length"
         }
       });
     } catch (error) {
@@ -60,6 +67,10 @@ export async function elasticsearchConnection(query) {
       }
     }
 
+    if(fce !== ""){
+      fce(response.headers.get("Content-Length"));
+    }
+    
     data = await response.json();
     console.info(new Date() + " MOKI: got elastic data");
 
