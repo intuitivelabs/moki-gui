@@ -2,6 +2,11 @@ import attributes_list from "./attributes_list.json";
 export const getAttributes = () => {
   return attributes_list;
 };
+
+export function isEncryptedAttr(attr, encrypt) {
+  return attr;
+}
+
 /*
 return array of searchable attributes
 */
