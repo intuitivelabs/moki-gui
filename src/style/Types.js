@@ -43,6 +43,7 @@ export const Types = {
   "too_many_minutes": "Too many minutes",
   "poor_ratio_ca": "Poor ratio CA",
   "CA_unreachable": "CA unreachable",
+  "CA_reachable_again": "CA reachable again",
   "poor_parallel_reg": "Poor parallel reg",
   "security_metrics": "Security metrics"
 };

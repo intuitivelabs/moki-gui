@@ -44,6 +44,7 @@ export const ColorType = {
   "too_many_minutes": "#99e5af",
   "poor_ratio_ca": "#aa59e0",
   "CA_unreachable": "#2b2b29",
+  "CA_reachable_again": "#000075",
   "poor_parallel_reg": "#7FA900",
   "security_metrics": "#46f0f0"
 };
