@@ -22,6 +22,8 @@ export async function elasticsearchConnection(query,  params = false) {
     delete params.fce;
   }
 
+  pathname = pathname.substring(process.env.PUBLIC_URL.length, pathname.length);
+  
   if (query.includes(pathname)  || query.includes("table") ) {
     //get all necessarily parameters (filters, types, timerange) 
     var filters = getFilters();
@@ -35,7 +37,7 @@ export async function elasticsearchConnection(query,  params = false) {
     var response;
 
     try {
-      response = await fetch("/api/" + query, {
+      response = await fetch(process.env.PUBLIC_URL +"/api/" + query, {
         method: "POST",
         timeout: 60000,
         credentials: 'include',
