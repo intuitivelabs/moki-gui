@@ -7,6 +7,11 @@ export function isEncryptedAttr(attr, encrypt) {
   return attr;
 }
 
+export function cipherAttr(attr, value, profile, mode) {
+  return value;
+}
+
+
 /*
 return array of searchable attributes
 */

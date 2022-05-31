@@ -12,7 +12,7 @@ export { ColorsReds } from './src/style/ColorsReds.js';
 export { ColorType } from './src/style/ColorType.js';
 export { Types } from './src/style/Types.js';
 export { shareFilters } from './src/filter/shareFilters';
-export { getSearchableAttributes, getDisplayedAttributes, getAttributes, getCategory, isEncryptedAttr  } from './src/attributes/attributes.js';
+export { getSearchableAttributes, getDisplayedAttributes, getAttributes, getCategory, isEncryptedAttr, cipherAttr  } from './src/attributes/attributes.js';
 export { logout } from './src/helpers/logout.js';
 import './src/style/style.css';
 export { getExceededTypes, getExceededColor, getExceededName } from './src/helpers/getExceededTypes.js';
