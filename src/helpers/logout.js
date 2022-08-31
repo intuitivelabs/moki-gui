@@ -1,3 +1,5 @@
+import {getUsername} from "../../../../../src/js/helpers/getUsername";
+
 const deleteAllCookies = () => {
   const cookies = document.cookie.split(";");
 
@@ -18,6 +20,8 @@ export function logout() {
     http.open("get", window.location, false, "basic", "nouser");
     http.send("");
     deleteAllCookies();
+    getUsername();
+
   }
   catch (error) {
   }
