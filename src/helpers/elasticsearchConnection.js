@@ -46,7 +46,8 @@ export async function elasticsearchConnection(query,  params = false) {
           types: types,
           timerange_gte: store.getState().timerange[0],
           timerange_lte: store.getState().timerange[1],
-          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+          timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+          params: params
         }),
         headers: {
           "Content-Type": "application/json",
