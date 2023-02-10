@@ -1,3 +1,4 @@
+import querySrv from "../../../../../src/js/helpers/querySrv";
 import { getTypes } from "../../../../../src/js/helpers/getTypes.js";
 import { getFilters } from "../filter/getFilters.js";
 import store from "../../../../../src/js/store/index";
@@ -23,9 +24,9 @@ export async function elasticsearchConnection(query,  params = false) {
   }
 
   pathname = pathname.substring(process.env.PUBLIC_URL.length, pathname.length);
-  
+
   if (query.includes(pathname)  || query.includes("table") ) {
-    //get all necessarily parameters (filters, types, timerange) 
+    //get all necessarily parameters (filters, types, timerange)
     var filters = getFilters();
     var types = getTypes();
     console.info("MOKI: send fetch: " + query);
@@ -37,7 +38,7 @@ export async function elasticsearchConnection(query,  params = false) {
     var response;
 
     try {
-      response = await fetch(process.env.PUBLIC_URL +"/api/" + query, {
+      response = await querySrv(process.env.PUBLIC_URL +"/api/" + query, {
         method: "POST",
         timeout: 60000,
         credentials: 'include',
@@ -73,7 +74,7 @@ export async function elasticsearchConnection(query,  params = false) {
     if(fce !== ""){
       fce(response.headers.get("Content-Length"));
     }
-    
+
     data = await response.json();
     console.info(new Date() + " MOKI: got elastic data");
 
