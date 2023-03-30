@@ -46,6 +46,7 @@ export const ColorType = {
   "CA_unreachable": "#2b2b29",
   "CA_reachable_again": "#000075",
   "poor_parallel_reg": "#7FA900",
-  "security_metrics": "#46f0f0"
+  "security_metrics": "#46f0f0",
+  'reg-lost': '#41FA51',
 };
 export default ColorType;
