@@ -13,7 +13,7 @@ export const Types = {
   'reg-new': 'Reg new',
   'reg-del': 'Reg del',
   'reg-expired': 'Reg expired',
-  'reg-lost': 'Reg lost',
+  'reg_lost': 'Reg lost',
   'auth-failed': 'Auth failed',
   'notice': 'Notice',
   'log-reply': 'Log reply',
