@@ -35,6 +35,12 @@
                 "attrs.src_ca_id": [
                     "searchable"
                 ],
+                "attrs.dest_ca_name": [
+                    "searchable"
+                ],
+                "attrs.dest_ca_uuid": [
+                    "searchable"
+                ],
                 "attrs.sbc": [
                     "searchable"
                 ],
